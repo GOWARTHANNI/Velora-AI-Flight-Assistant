@@ -8,7 +8,7 @@ Your API credentials never reach the browser — everything is handled server-si
 ## Folder Structure
 
 ```
-velora-server/
+velora-AI Flight Assistant/
 ├── server.js           ← Express server (all Amadeus proxy routes)
 ├── package.json
 ├── .env                ← Your credentials (never commit this)
