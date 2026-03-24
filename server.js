@@ -7,7 +7,8 @@
 
 require('dotenv').config();
 const express  = require('express');
-const cors     = require('cors');
+//const cors     = require('cors');
+app.use(cors());
 const fetch    = require('node-fetch');
 const path     = require('path');
 
