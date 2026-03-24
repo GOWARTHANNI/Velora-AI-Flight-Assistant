@@ -12,7 +12,8 @@ const fetch    = require('node-fetch');
 const path     = require('path');
 
 const app  = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT 
+|| 3000;
 
 // ── Config ────────────────────────────────────────────────────────────────────
 const CLIENT_ID     = process.env.AMADEUS_CLIENT_ID;
@@ -225,7 +226,9 @@ app.get('/api/health', async (req, res) => {
 //  Fallback — serve velora_Flight.html for any non-API route
 // ─────────────────────────────────────────────────────────────────────────────
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'velora_Flight.html'));
+  //res.sendFile(path.join(__dirname, 'public', 'velora_Flight.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+
 });
 
 // ── Start ─────────────────────────────────────────────────────────────────────

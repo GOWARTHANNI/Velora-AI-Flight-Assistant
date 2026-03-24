@@ -2761,7 +2761,8 @@ window.searchFlights = async function(){
 
     // ── BACKEND PROXY — all Amadeus calls go through Node.js server ──
     // No API keys here — credentials live safely in .env on the server
-    const BACKEND_URL = window.location.origin; // same origin as Node server
+    // const BACKEND_URL = window.location.origin; // same origin as Node server
+    const BACKEND_URL = "https://velora-ai-flight-assistant.onrender.com";
 
     // ── Cabin map: Velora label → Amadeus travelClass ─────────
     const CABIN_MAP = {
